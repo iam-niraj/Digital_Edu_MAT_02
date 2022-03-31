@@ -47,14 +47,12 @@ class MyDrawer extends StatelessWidget {
                 value: themeChange.darkTheme,
                 onChanged: (bool value) {
                   themeChange.darkTheme = value;
-                }),    
-             
-             /* Switch(
-                value: themeChange.darkTheme,
-                onChanged: (bool value) {
-                  themeChange.darkTheme = value;
-                }), */
+                }), 
 
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text("Settings"),
           ),
         ],
       ),

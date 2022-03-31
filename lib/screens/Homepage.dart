@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_2/utils/shared_preferences.dart';
 
 import '../utils/drawer.dart';
 
@@ -15,7 +16,15 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Home"),
+      actions: [
+          IconButton(
+              onPressed: () {
+                SharedPreference.loginprefs!.setBool("loggedIn", false);
 
+                Navigator.pushReplacementNamed(context, "/login");
+              },
+              icon: Icon(Icons.exit_to_app))
+        ],  
       ),
       body: Container(),
       bottomNavigationBar: BottomNavigationBar(
