@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
             currentAccountPicture: CircleAvatar(
                 // backgroundImage: AssetImage(),
                 ),
-            decoration: BoxDecoration(color: Colors.blueAccent),
+            decoration: BoxDecoration(color: Colors.deepPurple),
           ),
           ListTile(
             leading: Icon(

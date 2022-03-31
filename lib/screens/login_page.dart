@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:task_2/utils/routes.dart';
+import 'package:task_2/utils/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -20,9 +21,10 @@ class _LoginPageState extends State<LoginPage> {
     if (_formkey.currentState!.validate()) {
       setState(() {
         changeButton = true;
+        SharedPreference.loginprefs?.setBool("loggedIn", true);
       });
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      await Navigator.pushReplacementNamed(context, MyRoutes.homeRoute);
       setState(() {
         changeButton = false;
       });

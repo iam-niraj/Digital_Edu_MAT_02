@@ -2,13 +2,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_2/screens/Homepage.dart';
 import 'package:task_2/screens/login_page.dart';
 import 'package:task_2/screens/splash_screen.dart';
 import 'package:task_2/utils/Themes/dark_theme_provider.dart';
 import 'package:task_2/utils/Themes/theme.dart';
 import 'package:task_2/utils/routes.dart';
-void main() {
+import 'package:task_2/utils/shared_preferences.dart';
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SharedPreference.loginprefs = await SharedPreferences.getInstance();
   runApp(MyApp());
 }
 
