@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-
-import 'Homepage.dart';
+import 'package:task_2/screens/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -13,10 +12,10 @@ class SplashScreen extends StatelessWidget {
          radius: 80.0,
          backgroundImage: AssetImage('assets/images/splash.png'),
       ),
-      nextScreen: HomePage(),
+      nextScreen: LoginPage(),
       splashTransition: SplashTransition.fadeTransition,
       animationDuration: Duration(seconds: 2),
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.deepPurpleAccent,
       splashIconSize: 140.0,
     ));
   }
