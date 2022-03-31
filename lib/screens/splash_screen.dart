@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:task_2/screens/home_screen.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+
+import 'Homepage.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
