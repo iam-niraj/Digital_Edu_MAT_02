@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-import 'package:flutter/material.dart';
-import 'package:task_2/Screen/homepage.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: Homepage(),));
-=======
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -58,11 +51,10 @@ class _MyAppState extends State<MyApp> {
           routes: {
          "/": (context) => SplashScreen(),
          MyRoutes.homeRoute: (context) => HomePage(),
-         MyRoutes.loginRoute: (context) => LoginPage()
          },
       );
       })
     );
   }
->>>>>>> master
+
 }
