@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:task_2/screens/Homepage.dart';
 import 'package:task_2/screens/login_page.dart';
+import 'package:task_2/screens/new_login.dart';
 import 'package:task_2/screens/splash_screen.dart';
 import 'package:task_2/utils/Themes/dark_theme_provider.dart';
 import 'package:task_2/utils/Themes/theme.dart';
@@ -50,7 +51,7 @@ class _MyAppState extends State<MyApp> {
           theme: Styles.themeData(themeChangeProvider.darkTheme, context),
           routes: {
          "/": (context) => SplashScreen(),
-         MyRoutes.homeRoute: (context) => HomePage(),
+         MyRoutes.homeRoute: (context) => NewLogin(),
          },
       );
       })
