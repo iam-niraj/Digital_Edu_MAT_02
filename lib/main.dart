@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_2/pages/home_page.dart';
 import 'package:task_2/pages/login_page.dart';
+import 'package:task_2/pages/signup_page.dart';
 import 'package:task_2/utils/routes.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => SignUpPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage()
       },
