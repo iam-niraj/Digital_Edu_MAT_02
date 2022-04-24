@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:task_2/utils/routes.dart';
-import 'package:task_2/utils/shared_preferences.dart';
+import 'package:task_2/routes/routes.dart';
+import 'package:task_2/utils/SharedPrefs/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

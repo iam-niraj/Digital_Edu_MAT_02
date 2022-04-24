@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:task_2/utils/shared_preferences.dart';
+import 'package:task_2/utils/SharedPrefs/shared_preferences.dart';
 
 class DarkThemeProvider with ChangeNotifier {
   SharedPreference darkThemePreference = SharedPreference();

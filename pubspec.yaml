@@ -38,8 +38,20 @@ dependencies:
   shared_preferences: ^2.0.13
   provider: ^6.0.2
   day_night_switcher: ^0.2.0+1
+  dropdown_formfield: ^0.1.4
+  enhanced_drop_down: ^0.1.7+1
+  dropdownfield2: ^1.0.6
+  custom_dropdown: ^0.0.2
+  flutter_slidable: ^1.2.0
+  faker: ^2.0.0
+  cool_dropdown: ^1.4.1
+  font_awesome_flutter: ^10.1.0
+  velocity_x: ^3.4.0
+  floor: ^1.2.0
 
 dev_dependencies:
+  floor_generator: ^1.2.0
+  build_runner: ^2.1.2
   flutter_test:
     sdk: flutter
 
